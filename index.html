@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main">
+    <div class="title">
+      <h1>Learn to code by watching others</h1>
+      <h2>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</h2>
+    </div>
+    <div class="content">
+      <h2><span>Try it free 7 days</span> then $20/mo. thereafter</h2>
+      <div class="info">
+        <form action="index.html">
+          <input type="text" name="firstName" placeholder="First Name" class="firstName" >
+          <p class="error_fName"></p>
+          <br>
+          <input type="text" name="lastName" placeholder="Last Name" class="lastName">
+          <p class="error_lName"></p>
+          <br>
+          <input type="email" name="email" placeholder="Email Address" class="email">
+          <p class="error_email"></p>
+          <br>
+          <input type="text" name="password" placeholder="Password" class="password">
+          <p class="error_password"></p>
+          <br>
+          <input type="submit" value="Claim your free trial " class="btn">
+          <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+        </form>
+      </div>
+    </div>
+  </div>
+ 
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.instagram.com/yu_dododo/">yudododo</a>.
+    </p>
+  </footer>
+  <script src="all.js" async defer></script>
+</body>
+</html>

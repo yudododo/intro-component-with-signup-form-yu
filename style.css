@@ -1,0 +1,258 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*::before,*::after{
+	box-sizing:border-box;
+}
+/* CSS Reset end */
+
+.attribution { font-size: 11px; text-align: center; margin:15px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    display:flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+	background: hsl(0, 100%, 74%) ;
+	background-image:url(./images/bg-intro-desktop.png);
+	color: white;
+	font-size: 16px;
+}
+
+.main{
+	width: 950px;
+	display:flex;
+}
+
+.title{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 475px;
+	padding: 20px;
+}
+
+.title h1{
+	font-size: 35px;
+	font-weight: 700;
+	margin:0px 0px 20px;
+}
+
+.title h2{
+	font-size: 13px;
+	line-height:1.3rem;
+	color:hsl(240, 24%, 93%);
+}
+
+.content{
+	width:475px;
+}
+
+.content h2{
+	background: hsl(248, 32%, 49%);
+	color:hsl(246, 25%, 77%);
+	padding: 20px;
+	border:0px;
+	border-radius: 10px;
+	margin: 0px 0px 20px;
+	font-size:15px;
+	text-align: center;
+	box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.content h2:hover{
+	background: hsl(248, 32%, 49%, 0.8);
+	color:hsl(246, 25%, 77%);
+	padding: 20px;
+	border:0px;
+	border-radius: 10px;
+	margin: 0px 0px 20px;
+	font-size:15px;
+	text-align: center;
+	box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+h2 span{
+	font-weight:600;
+	color:white;
+}
+
+.info{
+	padding: 25px;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.15);
+    margin: 0px 0px 10px;
+}
+
+.info form {
+    display: flex; 
+    flex-direction: column;
+}
+
+input{
+	padding: 15px;
+	border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+	border: 1px solid hsl(246, 25%, 77%) ;
+	font-weight: 500;
+    margin: 0px 0px 5px;
+}
+
+.btn{
+	background: hsl(154, 59%, 51%);
+	color:white;
+	padding: 15px;
+	border: 0;
+	border-radius: 5px;
+	text-transform: uppercase;
+	box-shadow: 0px -5px 0px rgba(0, 0, 0, 0.15) inset;
+}
+
+.btn:hover{
+	background: hsl(154, 59%, 51%, 0.5);
+	color:white;
+	padding: 15px;
+	border: 0;
+	border-radius: 5px;
+	text-transform: uppercase;
+	box-shadow: 0px -5px 0px rgba(0, 0, 0, 0.15) inset;
+}
+
+.info p{
+	color:hsl(246, 25%, 77%);
+	font-size: 10px;
+	text-align: center;
+}
+
+.info span{
+	color:hsl(0, 100%, 74%) ;
+	font-weight: 600;
+}
+
+.info .error_fName,.info .error_lName,.info .error_email,.info .error_password{
+	color:hsl(0, 100%, 74%);
+	font-weight: 600;
+	text-align: right;
+	font-style: italic;
+}
+
+.error-input {
+    border: 2px solid hsl(0, 100%, 74%);
+	position: relative;
+}
+
+.placeholder-image {
+    background: url(./images/icon-error.svg) no-repeat 380px 12px;
+}
+
+
+@media(max-width: 430px){
+	body{
+		background-image:url(./images/bg-intro-mobile.png);
+	}
+	.main{
+		max-width: 100%;
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.title{
+		max-width: 90%;
+		text-align: center;
+	}
+
+	.title h1{
+		font-size: 30px;
+		font-weight: 600;
+		line-height: 2.8rem;
+	}
+
+	.title h2{
+		font-size: 16px;
+		line-height: 1.7rem;
+	}
+
+	.content{
+		max-width: 90%;
+	}
+	
+	.content h2{
+		padding: 25px;
+		border-radius: 15px;
+		margin: 0px 0px 25px;
+		font-size:23px;
+		line-height: 1.9rem;
+	}
+
+	.content h2:hover{
+		padding: 25px;
+		border-radius: 15px;
+		margin: 0px 0px 25px;
+		font-size:23px;
+		line-height: 1.9rem;
+	}
+	
+	input{
+		font-weight: 500;
+		font-size: 20px;
+	}
+	
+	.info p{
+		font-size: 15px;
+		text-align: center;
+		line-height:1.5rem;
+	}
+
+	.placeholder-image {
+		background: url(./images/icon-error.svg) no-repeat 300px 15px;
+	}
+
+}
